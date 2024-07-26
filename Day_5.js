@@ -26,9 +26,7 @@ console.log("Concatenated string is :",concatenateString("Hello ","World"))
 
 //Activity 3
 
-const sumOfTwoNumber = (n1,n2)=>{
-    return n1+n2
-}
+const sumOfTwoNumber = (n1,n2 )=> n1+n2
 console.log("Sum of two numbers is :",sumOfTwoNumber(5,7));
 
 const containsCharacter = (str, char) => str.includes(char);
