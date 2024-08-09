@@ -23,7 +23,7 @@ body {
  background-image: url('./DW.jpeg');
 }
 .elem{
- 
+  z-index: 9;
     height: 120px;
     width: 100%;
     border-bottom: 3px solid white;
@@ -40,13 +40,15 @@ body {
 }
 
 .elem img {
-    height: 150px;
+    height: 170px;
     width: 150px;
     object-fit: cover;
     object-position: center;
-    border-radius: 50%;
+    border-radius: 25%;
     position: absolute;
     /* transform: translate(-50% , -50%); */
     opacity: 0;
     transition: all linear 0.2s;
+ 
+    transform: rotate(20deg);
 }

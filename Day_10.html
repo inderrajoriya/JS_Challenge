@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       img{
+            width: 30%;
+            height: 50vh;
+            object-fit: cover;     
+        }
+        #chngeColor , #resetColor{
+            width: 30%;
+            height: 50vh;
+            border: 2px solid black;
+        }
+        #container{
+            display: flex;
+            justify-content: space-between;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <button id="changeTextBtn">Change Text</button>
+    <p id="text">Original Text</p>
+    
+    <div id="container">
+    <img id="toggleImage"src="https://i.pinimg.com/736x/13/af/79/13af797880e46c2463262f1f2f21b814.jpg" alt="Sample Image">
+    <div id="chngeColor"></div>
+    <div id="resetColor"></div>
+   </div>
+
+   <br><br>
+   <form>
+     KeyDown: <input type="text"  id="keydown"> <br> <br>
+     KeyUp: <input type="text"  id="keyup"> <br> <br>
+     <p id="para"></p> <br> <br>
+   </form>
+
+   <form id="form">
+    <input type="text" name="name" placeholder="Name">
+    <input type="submit" value="Submit">
+  </form>
+  <br> <br>
+
+  <label for="cars">Choose a car: </label>
+  <select name="cars" id="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+  </select>
+  <p id="optionShowing"></p>
+
+  <ul id="itemList">
+    <li>Javascript</li>
+    <li>React</li>
+    <li>C++</li>
+  </ul>
+  <p id="listItemShow"></p>
+
+
+  <div id="parentElement"></div>
+<button id="addChild">Add Child</button>
+
+
+   <script src="Day_10.js"></script> 
+</body>
+</html> 
