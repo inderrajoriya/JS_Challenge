@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            height: 150px;
+            width: 150px;
+            border: 2px solid black;
+            margin-bottom: 10px;
+            position: relative;
+        }
+    </style>
+</head>
+<div id="box"></div>
+<body>
+
+    <input id="btn" type="button" value="ClickMe">
+    <script>
+        console.log("Radhe Radhe !!!!");
+        const btn = document.querySelector("#btn").addEventListener("click", (e) => {
+            console.log(e);
+            console.log(e.target.value);
+            console.log(e.type);
+        })
+        const box = document.querySelector("#box")
+        box.addEventListener('mousemove',(e)=>{
+          box.style.left = e.x + 'px'
+        })
+    </script>
+</body>
+
+</html>

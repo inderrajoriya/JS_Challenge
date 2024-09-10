@@ -19,8 +19,7 @@ let ul = document.querySelector('ul');
 ul.appendChild(newLi);
 
 
-let heading = document.getElementById('heading')
-heading.parentNode.removeChild(heading)
+let heading = document.getElementById('heading').parentNode.removeChild(heading)
 
 let parentElement = document.getElementById('unorderList');
 parentElement.removeChild(parentElement.lastElementChild);
